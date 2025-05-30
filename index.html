@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Padaria da Mamãe</title>
+  <title>Delícias Graff</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,46 +12,65 @@
 
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff8f0;
-      color: #5d4037;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #1d1d1f;
+      margin: 0;
+      padding: 0;
     }
 
-    .navbar {
-      background-color: #a47148;
+    nav.navbar {
+      background-color: #fff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
     }
 
     .navbar-brand, .nav-link {
-      color: white !important;
-      font-weight: bold;
+      color: #1d1d1f !important;
+      font-weight: 500;
     }
 
-    .header-section {
-      background: url('https://images.unsplash.com/photo-1587912934874-b2b6b9f7da07') center/cover no-repeat;
-      color: white;
-      padding: 6rem 1rem;
+    .hero {
       text-align: center;
+      padding: 10vh 2rem;
+      background: url('https://media.istockphoto.com/id/1187830875/photo/confectioner-decorating-chocolate-cake-close-up.jpg?s=612x612&w=0&k=20&c=sAUop7R4pohc-Pghb3CqVJnFE44p2phGi47z7pjK4Lc=') center/cover no-repeat;
+      color: #f5f5f7;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 600;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    .hero p {
+      font-size: 1.5rem;      
+    }
+
+    section {
+      padding: 6rem 1rem;
     }
 
     .section-title {
-      border-bottom: 2px solid #d7a86e;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .section {
-      padding: 4rem 0;
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 2rem;
     }
 
     .img-fluid {
-      border-radius: 10px;
+      border-radius: 1rem;
     }
 
     footer {
-      background-color: #f3e5ab;
-      color: #5d4037;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
+      background-color: #f5f5f7;
+      color: #6e6e73;
     }
   </style>
 </head>
@@ -60,11 +79,11 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Padaria da Mamãe</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand" href="#">Delícias Graff</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
           <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
@@ -74,59 +93,61 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="header-section text-white">
+  <!-- Hero -->
+  <header class="hero">
     <div class="container">
-      <h1 class="display-4 fw-bold">Padaria da Mamãe</h1>
-      <p class="lead">Sabores que aquecem o coração</p>
-    </div>
+      <h2>Tradição, sabor e carinho</h2>
+    </div>      
   </header>
 
   <!-- Sobre -->
-  <section id="sobre" class="section bg-light">
+  <section id="sobre">
     <div class="container" data-aos="fade-up">
       <h2 class="section-title">Sobre Nós</h2>
       <div class="row align-items-center">
         <div class="col-md-6">
-          <p>A Padaria da Mamãe é um negócio familiar com amor em cada fornada. Trabalhamos com ingredientes selecionados e receitas tradicionais, sempre prezando pelo sabor e qualidade. Venha sentir o cheirinho de pão quentinho e se apaixonar por nossos produtos.</p>
+          <p class="lead">A Delícias Graff é mais que uma confeitaria — é um espaço de aconchego onde cada pão, doce ou café é preparado com tradição e amor. Fundada pela família Graff em 2010, nossa missão é levar qualidade e sabor para para os eventos mais importantes da sua vida.</p>
         </div>
         <div class="col-md-6">
-          <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484d9" alt="Padaria" class="img-fluid shadow">
+          <img src="C:\Projects\graff\logo_grande.png" alt="Sobre" class="img-fluid">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Produtos -->
-  <section id="produtos" class="section">
-    <div class="container" data-aos="fade-right">
+  <section id="produtos" style="background-color: #f5f5f7;">
+    <div class="container" data-aos="fade-up">
       <h2 class="section-title">Nossos Produtos</h2>
-      <div class="row g-4">
+      <div class="row text-center g-4">
         <div class="col-md-4">
-          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187" alt="Pães" class="img-fluid">
-          <h5 class="mt-2">Pães Artesanais</h5>
+          <img src="doces.png" class="img-fluid" alt="Pães">
+          <h5 class="mt-3">Doces</h5>
+          <p>Brigadeiro, beijinho, caramelo e muito mais.</p>
         </div>
         <div class="col-md-4">
-          <img src="https://img.elo7.com.br/product/zoom/50011BB/docinhos-gourmet-docinhos.jpg" alt="Doces" class="img-fluid">
-          <h5 class="mt-2">Bolos e Doces</h5>
+          <img src="salgados.png" class="img-fluid" alt="Doces">
+          <h5 class="mt-3">Salgados</h5>
+          <p>Uma experiência inesquecível a cada sabor.</p>
         </div>
         <div class="col-md-4">
-          <img src="https://images.unsplash.com/photo-1605478371443-4508f5d6b648" alt="Café" class="img-fluid">
-          <h5 class="mt-2">Café Coado na Hora</h5>
+          <img src="bolo.png" class="img-fluid" alt="Café">
+          <h5 class="mt-3">Tortas</h5>
+          <p>Para celebrar os melhores momentos da vida.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="section bg-light">
-    <div class="container" data-aos="fade-left">
-      <h2 class="section-title">Contato</h2>
+  <section id="contato">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Fale Conosco</h2>
       <div class="row align-items-center">
         <div class="col-md-6">
-          <p><strong>Email:</strong> contato@padariadamamae.com</p>
-          <p><strong>Telefone:</strong> (49) 99999-9999</p>
-          <p><strong>Endereço:</strong> Rua dos Padeiros, 123 - Chapecó, SC</p>
+          <p class="lead"><strong>Email:</strong> deliciasgraff@gmail.com</p>
+          <p class="lead"><strong>Telefone:</strong> (49) 99999-9999</p>
+          <p class="lead"><strong>Endereço:</strong> Rua dos Padeiros, 123 - Chapecó, SC</p>
         </div>
         <div class="col-md-6">
           <img src="https://images.unsplash.com/photo-1603570419876-2b1b5c54f3cc" alt="Contato" class="img-fluid shadow">
@@ -135,17 +156,19 @@
     </div>
   </section>
 
-  <!-- Rodapé -->
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Padaria da Mamãe. Feito com carinho e fermento natural ❤️</p>
+    <p>&copy; 2025 Delícias Graff — Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
   </script>
 </body>
 </html>
